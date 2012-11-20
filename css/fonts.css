@@ -5,7 +5,7 @@
          url('fonts/league.woff') format('woff'),
          url('fonts/league.ttf') format('truetype'),
          url('fonts/league.svg#LeagueGothicRegular') format('svg');
-    font-weight: normal; font-style: normal;}
+    font-weight: normal; font-style: normal}
 @font-face {
     font-family: 'droid';
     src: url('fonts/droid.eot');
@@ -13,4 +13,12 @@
          url('fonts/droid.woff') format('woff'),
          url('fonts/droid.ttf') format('truetype'),
          url('fonts/droid.svg#DroidSansRegular') format('svg');
-    font-weight: normal; font-style: normal;}
+    font-weight: normal; font-style: normal}
+@font-face {
+    font-family: 'droid-bold';
+    src: url('fonts/droid-bold.eot');
+    src: url('fonts/droid-bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/droid-bold.woff') format('woff'),
+         url('fonts/droid-bold.ttf') format('truetype'),
+         url('fonts/droid-bold.svg#DroidSansBold') format('svg');
+    font-weight: normal; font-style: normal !important}
