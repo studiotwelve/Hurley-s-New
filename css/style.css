@@ -1,2 +1,5 @@
-body {font-family: "droid", sans-serif}
-h1 h2 h3 h4 h5 h6 {font-family: "league", sans-serif}
+body{color: #6B4324; background: #FFF1AF; font-family: "droid", sans-serif; line-height: 1.5em; margin: 0; padding: 0}
+h1, h2, h3, h4, h5, h6{font-family: "league", sans-serif; margin: 0}
+a{text-decoration: none; outline: none}
+h1{font-size: 6em; line-height: 1em} h2{font-size: 5em; line-height: 1em} h3{font-size: 4em; line-height: 1em} h4{font-size: 3em; line-height: 1em} h5{font-size: 2em; line-height: 1em} h6{font-size: 1em; line-height: 1em}
+aside{border: solid 1px #6B4324; border-left: solid .5em #d1bc94; border-right: none; margin: .6em 1em; padding: .6em; float: right; max-width: 20%; clear: both; box-sizing: border-box} aside.left{float: left}
