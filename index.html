@@ -24,9 +24,11 @@
 	</hgroup>
 	<div class="row">
 		<h3 class="threecol">#1 Steakhouse in Maggie Valley, NC</h3>
-		<h5 class="threecol">4352 Soco Rd.<br>Maggie Valley, NC 28751</h5>
-		<h3 class="threecol">(828) 926-1566</h3>
-		<h3 class="threecol last">Year Round<br>Indoor and Outdoor<br>Dining on The Creek!</h3>
+		<div class="threecol">
+			<h5>4352 Soco Rd.<br>Maggie Valley, NC 28751</h5>
+			<h3>(828) 926-1566</h3>
+		</div>
+		<h1 class="sixcol last">Year Round Indoor and Outdoor Dining on The Creek!</h1>
 	</div>
 </header>
 <section class="container" role="main">
@@ -667,24 +669,28 @@
 <!--[if IE]></div><![endif]-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+<script src="js/css3-mediaqueries.js"></script>
+<script src="js/cssfx.min.js"></script>
+<script src="js/scrollto.min.js"></script>
 <script>
 	$(function(){
 		$(".content").hide();
 		$("a.toggle").click(function(e){
 			e.preventDefault();
 			if($(this).parent().siblings(".content").is(":visible")){
-				$(this).parent().siblings(".content").hide();
+				$(this).parent().siblings(".content").slideToggle();
 				$(this).removeClass("show").addClass("hide");
 			} else {
-				$(this).parent().siblings(".content").show();
+				$(".cat .content").slideUp();
+				$(this).parent().siblings(".content").slideToggle(function(){
+					$.scrollTo($(this).parent(), "slow");
+				});
 				$(this).removeClass("hide").addClass("show");
 			}
 		});
 	});
 </script>
 <script src="js/plugins.js"></script>
-<script src="js/css3-mediaqueries.js"></script>
-<script src="js/cssfx.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
