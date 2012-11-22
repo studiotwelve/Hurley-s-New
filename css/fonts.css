@@ -23,10 +23,10 @@
          url('fonts/droid-bold.svg#DroidSansBold') format('svg');
     font-weight: normal; font-style: normal !important}
 @font-face {
-    font-family: 'veggie';
-    src: url('fonts/veggie.eot');
-    src: url('fonts/veggie.eot?#iefix') format('embedded-opentype'),
-         url('fonts/veggie.woff') format('woff'),
-         url('fonts/veggie.ttf') format('truetype'),
-         url('fonts/veggie.svg#VeggieburgerRegular') format('svg');
+    font-family: 'noteworthy';
+    src: url('fonts/noteworthy.eot');
+    src: url('fonts/noteworthy.eot?#iefix') format('embedded-opentype'),
+         url('fonts/noteworthy.woff') format('woff'),
+         url('fonts/noteworthy.ttf') format('truetype'),
+         url('fonts/noteworthy.svg#noteworthylight') format('svg');
     font-weight: normal; font-style: normal !important}

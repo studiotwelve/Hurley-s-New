@@ -1,14 +1,52 @@
+/* ==|== Elements =======================================================
+   Element styling - typography etc. ========================================================================= */
 body{color: #6B4324; background: #FFF1AF url("/img/bg.png") no-repeat fixed right bottom; font-family: "droid", sans-serif; font-size: 16px; line-height: 1.5em; margin: 0; padding: 0}
 h1, h2, h3, h4, h5{font-family: "league", sans-serif; font-weight: normal; margin: 0} h6{font-size: 1.1em; line-height: 1.3em; margin: 0}
 h1{font-size: 4em; line-height: 1em} h2{font-size: 3.5em; line-height: 1em} h3{font-size: 3em; line-height: 1em} h4{font-size: 2.5em; line-height: 1em} h5{font-size: 2em; line-height: 1em}
 a{font-family: "droid-bold", sans-serif; font-weight: bold; text-decoration: none; outline: none}
+a, a:link, a:active, a.active, a:visited, a:hover {color: inherit}
 h1 a, h2 a, h3 a, h4 a, h5 a {font-family: "league", sans-serif; font-weight: normal}
 aside{box-shadow: inset 0 1em 0 0px #FFF1AF, inset 0 -1em 0 0px #FFF1AF, inset 2em 0px 0px 0px #f5e29d, 0px -1px 0px 0px #6B4324, 0px 1px 0px 0px #6B4324; font-size: .8em; margin: .6em 1em; padding: .6em .6em .6em 3em; float: right; max-width: 20%; clear: both} aside.left{float: left}
 strong, h6{font-family: "droid-bold", sans-serif; font-weight: bold}
-img.picture{box-shadow: inset 0px 1px 4px 1px #6B4324, 0px 0px 0px 8px #FFF, 0px 0px 0px 9px #6B4324, 0px 2px 7px 9px #6B4324; background: #FFF; width: 100%; height: auto; margin: .6em; padding: 8px; box-sizing: border-box}
 figcaption, aside footer{font-style: oblique}
-blockquote{color: #A7895C; font-family: "league", sans-serif; font-weight: normal; font-size: 5em; line-height: 1em; border: dashed 1px #6B4324; border-left: none; border-right: none; margin: .3em auto; padding: .1em 1em; max-width: 80%; box-sizing: border-box}
-blockquote cite{font-size: .4em; text-align: right; display: block; margin: -2em 0 0}/*<=Basic*/
+blockquote{color: #A7895C; font-family: "league", sans-serif; font-weight: normal; font-size: 3em; line-height: 1em; border: 1px dashed black; border-left: none; border-right: none; margin: .3em auto; padding: .1em 1em; max-width: 80%; box-sizing: border-box}
+blockquote cite{font-size: .4em; text-align: right; display: block; margin: -2em 0 0}
+p{margin: 0}
+
+/* ==|== Get Classy =======================================================
+   Helper classes. ========================================================================= */
 .green{color: #446911}
-img[align=left]{padding: 0px 8px 0px 0px}
-#top {padding: 16px 0px 0px 0px}
+.left{float: left}
+img.left{padding: 0px 8px 0px 0px; vertical-align: baseline}
+img.picture{box-shadow: inset 0px 1px 4px 1px #6B4324, 0px 0px 0px 8px #FFF, 0px 0px 0px 9px #6B4324, 0px 2px 7px 9px #6B4324; background: #FFF; width: 100%; height: auto; margin: .6em; padding: 8px; box-sizing: border-box}
+.container{padding: 1em 20px}
+
+blockquote.row{color: #6B4324; margin: 20px auto 0}
+
+.noteworthy{font-size: .8em}
+.noteworthy p{font-size: 1.4em}
+.noteworthy *{font-family: "noteworthy", fantasy; letter-spacing: -1px}
+
+.highlite{background: url("/img/star.png") no-repeat left .8em; border: dashed 1px #6B4324; border-left: none; border-right: none; padding: .5em 0 .5em 4em; margin: 1em 0; box-sizing: border-box}
+.cat{padding: 0 0 .8em; border-bottom: dashed 1px}
+.menu h2{background: #6B4324 linear-gradient(#865d3d 0%, #6B4324 100%); box-shadow: 0px 2px 7px #6B4324; color: #FFF1AF; padding: .1em 0; margin: 0 0 .2em 0; box-sizing: border-box}
+.menu h2 a{background: url("/img/m-closed.png") no-repeat 98% center; border: dashed 1px; border-left: none; border-right: none; display: block; padding: 0 .1em}
+.cat h3 a{background: url("/img/c-closed.png") no-repeat 98% center; border-bottom: dashed 1px; margin-bottom: .2em; display: block}
+.menu h2 a.show{background-image: url("/img/m-open.png")}
+.cat h3 a.show{background-image: url("/img/c-open.png")}
+.menu h2 a.hide{background-image: url("/img/m-closed.png")}
+.cat h3 a.hide{background-image: url("/img/c-closed.png")}
+.menu small{font-style: oblique}
+
+/* ==|== Respond =======================================================
+   for now just a little padding hack. ========================================================================= */
+@media handheld,only screen and (max-width:767px){
+	 .row .menu.onecol,  .row .menu.twocol,
+	 .row .menu.threecol,  .row .menu.fourcol,
+	 .row .menu.fivecol,  .row .menu.sixcol,
+	 .row .menu.sevencol,  .row .menu.eightcol,
+	 .row .menu.ninecol,  .row .menu.tencol,
+	 .row .menu.elevencol,  .row .menu.twelvecol {
+		padding-left: 0; padding-right: 0;
+	}
+}
