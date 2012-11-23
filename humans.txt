@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Michael Hurley -- That Guy! -- @MichaelHurley2
 
 # THANKS
 
-    <name>
+    Mom!
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    H5BP, HTML5, CSS3
+    1140GS, Normalize, fontSquirell
+    jQuery, Modernizr, scrollTo, css3-Media-Queries, cssFx
