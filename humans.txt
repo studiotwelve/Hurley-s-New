@@ -3,14 +3,14 @@
 
 # TEAM
 
-    Michael Hurley -- That Guy! -- @MichaelHurley2
+    Michael Hurley -- Designer/Developer -- @MichaelH_rley
 
 # THANKS
 
-    Mom!
+    Mom, Adrienne Mollette
 
 # TECHNOLOGY COLOPHON
 
-    H5BP, HTML5, CSS3
-    1140GS, Normalize, fontSquirell
-    jQuery, Modernizr, scrollTo, css3-Media-Queries, cssFx
+    HTML5, CSS3
+    Modernizr, jQuery, Bootstrap, cssFx,
+    html5forms*[formerly: html5widgets]

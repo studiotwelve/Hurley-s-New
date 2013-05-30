@@ -1,0 +1,141 @@
+/* typography */
+body,input,textarea{font-family:"light"; font-weight:normal !important}
+strong,b,a,button,.btn,
+input[type="submit"],input[type="button"],input[type="reset"]{font-family:"bold";  font-weight:normal !important}
+
+.btn-large{font-family:"heavy"; font-weight:normal !important}
+
+h1,h2,h3,h4,h5,h6,
+h1 strong, h1 b, h1 a, h2 strong, h2 b, h2 a,
+h3 strong, h3 b, h3 a, h4 strong, h4 b, h4 a,
+h5 strong, h5 b, h5 a, h6 strong, h6 b, h6 a,
+.h1, .h2, #site-title, #site-slogan,
+.h1 a, .h2 a, #site-title a, #site-slogan a{font-family:"black"; font-weight:normal !important}
+
+.h1,#site-title{font-size:38.5px; line-height:normal}
+.h2,#site-slogan{font-size:31.5px; line-height:normal}
+
+#site-title {margin-bottom:-10px}
+#site-title a{color:inherit}
+#site-title a:hover{text-decoration:none}
+
+#site-logo img {box-sizing:border-box; padding:.6em 0 .5em}
+
+.inline{display:inline}
+.inline-block{display:inline-block}
+
+i:before, i:after{content=" "; padding:0 .25em} /* !glyph spacing */
+/* put some padding here so you don't need spaces and your glyphs don't break away from the related text
+@@TODO Find a better selector for this */
+
+.hero-unit{padding:.5em 1em}
+.hero-unit .lead.pull-right {box-sizing:border-box; padding:.5em 1em;
+margin-left:.5em; max-width:60%; border-radius:6px}
+.hero-unit .lead.pull-right.dark {background:#666; color:#eee}
+
+#content .content{min-height:300px}
+#content .sidebars{position:absolute; top:0; padding: 0 20px} /* pull up our sidebars add padding */
+
+article aside.author{float:right; max-width:30%; background:#f5f5f5;
+padding:.5em 1em; margin:0 0 0 .5em; box-sizing:border-box; border:1px solid #f0f0f0}
+
+.nav>li>a{border-radius:4px}
+
+/* classy navbar */
+.navbar .nav>li>a{border-radius:0}
+.navbar .nav li.active a{color:#08c}
+.navbar .nav li.active a:before{content:"\e11a"; font-family:"mashup"; line-height:1; vertical-align:baseline; position:relative; top:2px}
+
+.navbar .navbar-inner{box-shadow:0px 1px 4px #d4d4d4}
+.navbar .nav li a{background-image:linear-gradient(#fff,#e6e6e6); box-shadow:inset 0px 1px 0px 1px rgba(255,255,255,.6)}
+.navbar .nav li a:hover, .navbar .nav li.active a:hover{color:#fff; text-shadow:none; background-image:linear-gradient(#08c,#04c);
+box-shadow:inset 0px -2px 7px rgba(255,255,255,.3),inset 0px 1px 0px 2px #08c,inset 0px 1px 0px 2px rgba(255,255,255,.2)}
+
+/* !footer styles */
+#footer{color:#999; background:#f5f5f5; border:1px solid #f0f0f0; padding-top:.1em}
+footer .nav .h2{margin-left:-.25em}
+footer .nav{font-size:17.5px}
+#footer .nav>li>a:hover, #footer .nav>li>a:focus{color:#08c}
+#footer a:hover, #footer a:focus{color:#08c}
+
+/* more typography and layout @TODO:move this */
+figure{font-size:21.5px; line-height:normal; padding:6px; border-radius:6px; border:solid 1px #ddd; background:#eee}
+figure img{margin:6px 0; padding:4px; box-sizing:border-box; width:100%; height:auto; border-radius:6px; border:solid 1px #ddd; background:#fff}
+figcaption{font-size:12px; line-height:normal; margin:0 4px}
+
+@media (min-width:769px){ /* !> iPad Portait */
+/* We think the equal width navbar makes more sense here
+ * Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner{padding:0}
+.navbar .nav{margin:0; display:table; width:100%}
+.navbar .nav li{display:table-cell; width:1%; float:none}
+.navbar .nav li a{font-weight:bold; text-align:center;
+border-left:1px solid rgba(255,255,255,.75); border-right:1px solid rgba(0,0,0,.1)}
+.navbar .nav li:first-child a{border-left:0; border-radius:3px 0 0 3px}
+.navbar .nav li:last-child a{border-right:0; border-radius:0 3px 3px 0}
+.hero-unit .lead.pull-right{max-width:30%}
+.hero-unit .btn.pull-right{float:none; display:block; width:intrinsic}}
+
+article .content aside{float:right; max-width:200px; box-sizing:border-box; margin-left:1em} /* All asides should float to one side or the other */
+article .content aside.left{float:left; margin-left:0; margin-right:1em}
+
+@media (max-width:768px){ /* !<|= iPad Portrait */
+/* Override the bootstrap padding switch
+ * bootstrap switches the padding to the body for some reason but if you sectioned
+ * your theme into different colors you'd be in trouble here and have to do a lot of
+ * fixing with padding -20px in this @media block we've got a simple fix...
+ */
+body{padding:0} .container-fluid, #content{padding:0 20px}
+#content .row-fluid{padding:0; position:relative}
+
+#header .site-logo-wrapper{display:none}
+#site-title:before{content:"\e02f"; font-family:"mashup"; vertical-align:top; color:#8d00ff}
+
+article aside.author{float:none; max-width:100%; margin:0}
+
+.navbar .navbar-inner{padding:0}
+.navbar .nav{display:block; width:100%}
+.navbar .nav li{display:block; width:auto; float:none}
+.navbar .nav li a{display:block; float:none; width:auto; text-align:left; border-bottom:solid 1px #ddd}
+.navbar .nav li:last-child a{border:none}
+
+.hero-unit{margin:0 -20px 20px; padding:.5em 20px .25em}
+.hero-unit .btn{display:block}}
+
+@media (max-width:320px){
+#site-slogan{clear:both}
+.hero-unit .pull-right{float:none}
+.hero-unit .lead.pull-right{margin-left:0; max-width:100%}}
+
+/* features.php */
+ul.no-bull{list-style:none; margin:0}
+ul.no-bull li>ol{list-style:decimal-leading-zero}
+ul.documentation span.example{border:solid 1px #ccc; border-radius:6px; padding:6px; margin-bottom:14px; display:block}
+
+.font-demo{font-size:3em; line-height:normal}
+.font-demo .code{font-size:11pt}
+
+/* !prettyprint */
+pre.prettyprint{border-color:#ccc !important}
+pre.prettyprinted{font-family:"code"!important; font-size:11pt!important}
+pre.prettyprinted ol.linenums{margin-left:0; overflow:auto}
+pre.prettyprinted li{list-style-type:decimal-leading-zero; list-style-position:inside; white-space:inherit}
+pre.prettyprinted .tooltip{font-family:"light"; font-size:14px; line-height:normal; word-wrap:break-word; word-break:break-word; white-space:normal}
+pre.prettyprinted .nocode a{font-family:"code"; font-weight:normal; font-size:11pt; text-decoration:none}
+
+/* !glyphs.php */
+.icons-grid{list-style-type:none; margin:0}
+.icons-grid .item{display:inline-block; vertical-align:top; width:30%; background:#e9e9e9; border-radius:8px; padding:.5em .5em 0; margin:0 0 .5em; box-sizing:border-box}
+.icons-grid .item span{display:block; text-align:center; margin:0 0 .5em}
+.icons-grid .item .title{font-family:"black"; font-size:18px}
+.icons-grid .item .example{font-size:36px}
+.icons-grid .item .class-name{font-family:"code"}
+
+/* !theme */
+body{background:#fff}
+h1,h2,h3,h4,h5,h6,p,blockquote{margin:0 0 .5em 0}
+.row-fluid{margin-bottom:1em}
+.col-fluid,.main>section>article,.block{box-sizing:border-box; padding:.5em; background:#fafafa; border:1px solid #f1f1f1}
+
+.main>section>article.clearfix{padding-right:30%; position:relative}
+.main>section>article.clearfix>aside.author{position:absolute; top:0; right:0; margin:.5em .5em 0 0}
