@@ -66,7 +66,7 @@ h4.label{font-size:2em; line-height:1.33em} h5.label{font-size:1.5em; line-heigh
 
 /* !Sections */
 #content{min-height:10em}
-#pushup{padding-top:3em}
+#pushup{padding-top:0}
 
 #top-header h3>a{font-family:'selfish'; font-size:2em; line-height:1.33em; color:#000; white-space:nowrap}
 #top-header small{display:block; font-family:light; white-space:normal}
@@ -83,35 +83,19 @@ h4.label{font-size:2em; line-height:1.33em} h5.label{font-size:1.5em; line-heigh
 #top-nav .navbar-fixed-top a.brand .brand-text{font-size:.8em; line-height:1.33em; vertical-align:text-top}
 
 #top-nav .btn.btn-navbar{color:#09c; text-shadow:0px 1px 1px #fff; font-size:2em; line-height:1em; padding:0 .125em}
-#top-nav navbar-inverse .btn.btn-navbar{color:inherit; text-shadow:inherit}
+#top-nav .navbar-inverse .btn.btn-navbar{color:inherit; text-shadow:inherit}
+
+/* !Color (light labels) */
+.red{color:#671800} .green{color:rgb(90,149,67)} .brown{color:#441f05} .blue{color:#0079ad}
 
 /* !Carousels */
 a.carousel-control{font-family:'ultra_light'; color:#fff}
+.carousel{margin:0}
+.carousel .carousel-inner .item.active img{border-top-left-radius:6px; border-top-right-radius:6px}
 
-#myCarousel .carousel-inner{border:1px solid #f1f1f1; border-top-left-radius:1em; border-top-right-radius:1em; margin:0}
-#myCarousel .item.active .rich-slide{border-top-left-radius:.5em; border-top-right-radius:.5em}
-
-/* !Rich Slide */
-.rich-slide{min-height:360px; padding:1em 3em; font-size:2em; line-height:1.33em}
-.rich-slide .slide-title{font-size:2em; line-height:1.33em}
-.rich-slide .btn{font-size:.8em; line-height:1.33em}
-
-/* !My Slides */
-.slide-design{background:url('/img/slide-bg-blueprint.png') repeat left top; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.33)}
-.slide-design .slide-title{font-family:'CARIBBEAN TOOL'; font-size:3em; line-height:1.33em; text-shadow:inherit}
-.slide-design p.lead{text-shadow:inherit}
-
-.slide-develop{background:url('/img/slide-bg-develop.png') no-repeat 40% bottom; background-size:cover; color:#fff; text-shadow:0 1px 3px rgba(0,0,0,.8)}
-.slide-develop .slide-title{font-family:'Boston Traffic'; font-size:2.5em; line-height:1.33em; text-shadow:inherit}
-.slide-develop p.lead{font-family:'heavy'; text-shadow:inherit}
-
-.slide-market{background:url('/img/slide-bg-brand.png') no-repeat left bottom; background-size:cover}
-.slide-market .slide-title{font-family:'Chunkfive'; font-size:3em; line-height:1.33em}
-
-.slide-consult{background:url('/img/slide-bg-cardinal.png') no-repeat right top; background-size:contain}
-.slide-consult .slide-title{font-family:'Mailart Rubberstamp'; font-size:2em; line-height:1.33em; letter-spacing:normal;
-text-shadow:1px 1px 3px #fff, -1px -1px 3px #fff, -1px 1px 3px #fff, 1px -1px 3px #fff}
-.slide-consult p.lead{margin-right:30%; text-shadow:1px 1px 3px #fff, -1px -1px 3px #fff, -1px 1px 3px #fff, 1px -1px 3px #fff}
+/* !--Carousel Captions */
+.carousel-caption{padding:15px 0 15px 80px; background:transparent; color:#fff; font-size:1.5em; line-height:.8em}
+.carousel-caption *{text-shadow:none; text-shadow:1px 1px #000, -1px -1px #000, -1px 1px #000, 1px -1px #000}
 
 /* !Hero Unit Hacks */
 .hero-unit{border-radius:0; border:1px solid #f1f1f1; background:#fafafa; position:relative; margin-bottom:1em; font-size:2em; line-height:1.33em}
@@ -127,10 +111,14 @@ text-shadow:1px 1px 3px #fff, -1px -1px 3px #fff, -1px 1px 3px #fff, 1px -1px 3p
 .hero-unit .sidekick .title{line-height:1.33em}
 
 /* !My Heros */
-.hero-dribbble{background:#fafafa url('/img/hero-bg-dribbble.png') no-repeat 50% 50%; background-size:cover}
-.hero-dribbble .hero-title img{vertical-align:baseline}
-.hero-dribbble .lead{font-family:'heavy'}
-.hero-dribbble .sidekick{background:rgba(255,255,255,.9); box-shadow:0px 1px 3px rgba(0,0,0,.33); border:1px solid rgba(250,250,250,.5)}
+.league, .league *{font-family:'league' !important}
+
+.hero-umbrella{background:#fafafa url('/img/bg.png') no-repeat 95% 2em; background-size:contain; padding:1em; color:#671800}
+.hero-umbrella ul{color:rgb(90,149,67)}
+.hero-umbrella li{display:inline; list-style-type:none}
+.hero-umbrella li:before{content:" ★ "; font-size:.7em; vertical-align:text-top}
+.hero-umbrella li:nth-child(2){color:#82490d}
+.hero-umbrella .sidekick{max-width:inherit; margin-top:-1em; font-size:.6em; color:#6d340e; background-color:rgba(255,255,255,.6)}
 
 #top-blocks .row-fluid{margin-bottom:1em}
 
@@ -147,18 +135,20 @@ text-shadow:1px 1px 3px #fff, -1px -1px 3px #fff, -1px 1px 3px #fff, 1px -1px 3p
 
 /* !@Hurleys */
 
-a.trip, .trip{color:#468847}
-.trip .label{margin:.25em auto; text-shadow:none}
+a.trip, .trip{color:rgb(90,149,67)}
+.trip .label{margin:.25em auto; text-shadow:none; background-color:rgb(90,149,67)}
 
 .rotate90{transform:rotate(-90deg);
    transform-origin:right top}
 #best-inner{
-    width:55px;
-    height:159px;
+    width:101px;
+    height:136px;
     display:inline-block;
     position:relative;
-    margin-right:.5em}
+    font-size:1.6em}
 
-#best{position:absolute; right:100%; top:19px}
+#best{position:absolute; right:100%}
 
 #best-after{display:inline-block}
+
+.best-wrapper{font-size:1.3em} .best-wrapper *{line-height:.8em}
