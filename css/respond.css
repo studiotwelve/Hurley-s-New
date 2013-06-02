@@ -1,52 +1,28 @@
 @media (max-width:1100px){
 	#top-header .nav-pills.pull-right{float:none}
 	.carousel-caption{font-size:1em}
-	.hero-unit .sidekick{float:none; margin:0 auto .5em; text-align:left}
+	.hero-unit .sidekick{float:none; margin:0 auto .5em; text-align:center}
 	.hero-unit{text-align:center}
-	.hero-unit.hero-dribbble{background-size:contain; background-position: right bottom}
-}
-
-@media (min-width:980px){
-	#top-nav .navbar-fixed-top{border-radius:0px}
-}
-
-@media (max-width:979px){
-	#pushup{padding-top:0}
-	
-	#top-nav .navbar-fixed-top{margin:1em 0 -7em; border-radius:3px; width:intrinsic; float:right}
-	#top-nav .navbar-fixed-top .navbar-inner{border:1px solid #ddd; border-radius:6px}
-	#top-nav .navbar-fixed-top a.brand{margin:0; padding:.5em; cursor:text}
-}
-
-@media (max-width:858px){
-	#top-nav .navbar-fixed-top{float:none; margin:0 -20px; width:auto; border-radius:0px}
-	.carousel-caption{font-size:.8em}}
-
+	.hero-unit.hero-dribbble{background-size:contain; background-position: right bottom}}
+@media (max-width:979px){#pushup{padding-top:0}}
+@media (max-width:939px){
+	#best.rotate90{display:inline; position:relative; right:inherit; margin:0; padding:0}
+	#best-inner{width:auto; height:auto; display:block}
+	#best-after{display:block}}
+@media (max-width:858px){.carousel-caption{font-size:.8em}}
 @media (max-width:768px){
 	.container-fluid{padding-left:20px; padding-right:20px}
 	body{padding-left:0; padding-right:0}
-	
-	#top-nav .navbar-fixed-top{border-radius:0px}
-	
 	#top-header h3>a{font-size:1.2em}
 	#top-header .nav-pills.pull-right{margin:0; float:right}
 	#top-header .nav-pills a{font-size:1em}
 	.carousel-caption{font-size:.7em}
-}
-
-@media (max-width:596px){ /* #top-header breaks @ 595 */
-	#top-nav .navbar-fixed-top{border-radius:0px}
+	.row-fluid .col-fluid{margin-bottom:1em}
+	span.visible-phone{display:inline !important}}
+@media (max-width:596px){
 	#top-header .nav-pills.pull-right{float:none}
-	.carousel-caption{font-size:.6em}
-}
-
+	.carousel-caption{font-size:.6em}}
 @media (max-width:481px){
-	#top-nav .navbar-fixed-top{border-radius:0px}
 	#myCarousel{display:none}
-	.hero-unit{padding:.5em .25em}
-}
-
-@media (max-width:385px){
-	#top-nav .navbar-fixed-top{border-radius:0px}
-	#top-header .nav-pills.pull-right a{font-size:.6428571156em}
-}
+	.hero-unit{padding:.5em .25em}}
+@media (max-width:385px){#top-header .nav-pills.pull-right a{font-size:.6428571156em}}

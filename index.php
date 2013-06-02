@@ -82,7 +82,9 @@ q();
 
 <div id="content">
 	<div class="container-fluid">
-		
+		<div class="row-fluid" id="local-seafood">
+			<h1>Local Seafood</h1>
+		</div>
 	</div>
 </div><!-- !/#content -->
 
@@ -355,27 +357,19 @@ q();
 			e.preventDefault();
 			
 			var x = $(this).attr('href'); var y; var z=0;
-			var r = /\/(.*)?/g;
+			var r = /\/(.+)/g;
 			var m = r.exec(x);
 			
-			if (m[0]){
-				y = "#"+m[0];
+			if(x=="/"){y=0;}else{
+				y = "#"+m[1];
+				
+				if(!($(y).offset()=='undefined')){
+					z = $(y).offset().top;
+				}
 			}
-			
-			if(x='/'){y=0;}else{
-				y = ""+y+"";
-				y = $(y);
-			
-				var z = y.scrollTop();
-			}
-			
-			console.log("Q: "+$('span.request_path').attr('data-query'));
-			console.log("E: "+e);
-			console.log("X: "+x);
-			console.log("Y: "+y);
-			console.log("Z: "+z); //debug first
-			
-			//window.scrollTo(z, 0);
+			document.title = $(this).attr("title")+" | "+document.title;
+			window.history.pushState("", document.title, x);
+			window.scrollTo(0, z);
 		});
 	});
 </script></body></html>

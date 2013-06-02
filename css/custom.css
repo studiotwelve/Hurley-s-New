@@ -81,9 +81,7 @@ h4.label{font-size:2em; line-height:1.33em} h5.label{font-size:1.5em; line-heigh
 #top-nav .nav li a i[class*=ico-]{margin-right:.25em}
 #top-nav .navbar-fixed-top a.brand{margin-left:1em}
 #top-nav .navbar-fixed-top a.brand .brand-text{font-size:.8em; line-height:1.33em; vertical-align:text-top}
-
-#top-nav .btn.btn-navbar{color:#09c; text-shadow:0px 1px 1px #fff; font-size:2em; line-height:1em; padding:0 .125em}
-#top-nav .navbar-inverse .btn.btn-navbar{color:inherit; text-shadow:inherit}
+#top-nav .navbar-fixed-top .btn.btn-navbar{color:#333; text-shadow:0px 1px #fff; float:none; width: intrinsic}
 
 /* !Color (light labels) */
 .red{color:#671800} .green{color:rgb(90,149,67)} .brown{color:#441f05} .blue{color:#0079ad}
