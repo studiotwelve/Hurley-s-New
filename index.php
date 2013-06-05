@@ -1,65 +1,20 @@
 <?php
 date_default_timezone_set('America/New_York');
-if (isset($_GET['e'])){
-	$n=$_GET['e'];
-	$eTitle="Error ".$n.": ";
-	if($n=='404'){ // We only really want to handle 404 and 403 at the moment
-		$eDesc="We're sorry but the page you requested is not available, however you might find what your looking for here &hellip;";
-	}
-	if($n=='403'){
-		$eDesc="We're sorry but you are not permitted to access the page you requested, however you might find what your looking for here &hellip;";
-	}
-}
-
+if(isset($_GET['e'])){$n=$_GET['e']; $eTitle="Error ".$n.": ";
+	if($n=='404'){$eDesc="We're sorry but the page you requested is not available, however you might find what your looking for here &hellip;";}
+	if($n=='403'){$eDesc="We're sorry but you are not permitted to access the page you requested, however you might find what your looking for here &hellip;";}}
 function year(){print(date("Y"));}
-
-function request_path() {
+function request_path(){
   static $path;
-
-  if (isset($path)) {
-    return $path;
-  }
-
-  if (isset($_GET['q']) && is_string($_GET['q'])) {
-    // This is a request with a ?q=foo/bar query string. $_GET['q'] is
-    // overwritten in drupal_path_initialize(), but request_path() is called
-    // very early in the bootstrap process, so the original value is saved in
-    // $path and returned in later calls.
-    $path = $_GET['q'];
-  }
-  elseif (isset($_SERVER['REQUEST_URI'])) {
-    // This request is either a clean URL, or 'index.php', or nonsense.
-    // Extract the path from REQUEST_URI.
+  if(isset($path)){return $path;}
+  if(isset($_GET['q'])&&is_string($_GET['q'])){$path = $_GET['q'];}
+  elseif(isset($_SERVER['REQUEST_URI'])){
     $request_path = strtok($_SERVER['REQUEST_URI'], '?');
     $base_path_len = strlen(rtrim(dirname($_SERVER['SCRIPT_NAME']), '\/'));
-    // Unescape and strip $base_path prefix, leaving q without a leading slash.
     $path = substr(urldecode($request_path), $base_path_len + 1);
-    // If the path equals the script filename, either because 'index.php' was
-    // explicitly provided in the URL, or because the server added it to
-    // $_SERVER['REQUEST_URI'] even when it wasn't provided in the URL (some
-    // versions of Microsoft IIS do this), the front page should be served.
-    if ($path == basename($_SERVER['PHP_SELF'])) {
-      $path = '';
-    }
-  }
-  else {
-    // This is the front page.
-    $path = '';
-  }
-
-  // Under certain conditions Apache's RewriteRule directive prepends the value
-  // assigned to $_GET['q'] with a slash. Moreover we can always have a trailing
-  // slash in place, hence we need to normalize $_GET['q'].
-  $path = trim($path, '/');
-
-  return $path;
-}
-
-function q(){$_GET['q'] = request_path();}
-
-q();
-
-?>
+    if($path == basename($_SERVER['PHP_SELF'])){$path = '';}}
+  else{$path = '';} $path = trim($path, '/'); return $path;}
+function q(){$_GET['q'] = request_path();} q(); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head><meta charset="utf-8">
@@ -356,19 +311,20 @@ q();
 		$('a.clean').live("click", function(e){
 			e.preventDefault();
 			
-			var x = $(this).attr('href'); var y; var z=0;
+			var x = $(this).attr('href'); var y; var z;
 			var r = /\/(.+)/g;
 			var m = r.exec(x);
+			
+			document.title = $(this).attr("title")+" | "+document.title;
+			window.history.pushState("", document.title, x);
 			
 			if(x=="/"){y=0;}else{
 				y = "#"+m[1];
 				
-				if(!($(y).offset()=='undefined')){
+				try{
 					z = $(y).offset().top;
-				}
+				} catch(err) {z=0;}
 			}
-			document.title = $(this).attr("title")+" | "+document.title;
-			window.history.pushState("", document.title, x);
 			window.scrollTo(0, z);
 		});
 	});
