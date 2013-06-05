@@ -4,7 +4,7 @@
 	.hero-unit .sidekick{float:none; margin:0 auto .5em; text-align:center}
 	.hero-unit{text-align:center}
 	.hero-unit.hero-dribbble{background-size:contain; background-position: right bottom}}
-@media (max-width:979px){#pushup{padding-top:0}}
+@media (min-width:980px){#pushup{padding-top:3.3em}}
 @media (max-width:939px){
 	#best.rotate90{display:inline; position:relative; right:inherit; margin:0; padding:0}
 	#best-inner{width:auto; height:auto; display:block}

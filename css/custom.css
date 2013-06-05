@@ -144,9 +144,9 @@ a.trip, .trip{color:rgb(90,149,67)}
     display:inline-block;
     position:relative;
     font-size:1.6em}
-
 #best{position:absolute; right:100%}
-
 #best-after{display:inline-block}
-
 .best-wrapper{font-size:1.3em} .best-wrapper *{line-height:.8em}
+
+.menu-item:nth-child(even),.menu-item.even{text-align:right}
+.menu-item:nth-child(odd),.menu-item.odd{text-align:left}

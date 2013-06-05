@@ -36,11 +36,97 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 </head><body>
 
 <div id="content">
-	<div class="container-fluid">
-		<div class="row-fluid" id="local-seafood">
-			<h1>Local Seafood</h1>
-		</div>
-	</div>
+	<section role="main" class="container-fluid">
+		<div class="accordion" id="main-menu">
+			<div class="accordion-group menu"><!-- !Specials -->
+				<h2 class="accordion-heading menu-title">
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#specials" title="Best Specials in Maggie Valley, NC">Hurley Bird Specials <small class="menu-details"><strong>4pm to 6pm</strong> <em>Dine in only.</em></small></a>
+					
+				</h2>
+				<div id="specials" class="accordion-body collapse menu-items">
+					<div class="accordion-inner">
+						<div class="row-fluid">
+							<div class="col-fluid menu-item">
+								<h3 class="menu-item-title">
+									Hurley’s Famous Prime Rib
+								</h3>
+								<p class="menu-item-desc lead">
+									A local favorite, our famous tender, juicy, seasoned & slow roasted prime rib prepared to your liking and served with our delicious au jus and creamy or raw horse raddish. <em>Served with salad and your choice of one side</em>.<span class="menu-item-price">13.95</span>
+								</p>
+							</div><!-- !/.menu-item -->
+							
+							<div class="col-fluid menu-item">
+								<h3 class="menu-item-title">
+									Tender Boneless Pork Chops
+								</h3>
+								<p class="menu-item-desc lead">
+									Unbelievably tender, moist, marinated boneless center cut pork tenderloin chops, char-grilled over an open flame lightly seasoned and very tasty. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
+								</p>
+							</div><!-- !/.menu-item -->
+						</div>
+						
+						<div class="row-fluid">
+							<div class="col-fluid menu-item">
+								<h3 class="menu-item-title">
+									Hurley's Chicken
+								</h3>
+								<p class="menu-item-desc lead">
+									Our marinated chicken breast char-grilled & topped with mixed cheese, bacon, mushrooms & honey mustard. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
+								</p>
+							</div><!-- !/.menu-item -->
+							
+							<div class="col-fluid menu-item">
+								<h3 class="menu-item-title">
+									Eggplant Parmesan
+								</h3>
+								<p class="menu-item-desc lead">
+									Marinara with parmesan and mozzarella over golden fried eggplant and linguine.<span class="menu-item-price">13.95</span>
+								</p>
+							</div><!-- !/.menu-item -->
+						</div>
+						
+						<div class="row-fluid">
+							<div class="col-fluid menu-item">
+								<h3 class="menu-item-title">
+									Fish and Chips
+								</h3>
+								<p class="menu-item-desc lead">
+									Filet of catfish fried and served with fresh house cut french fries, great with salt and vinegar. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
+								</p>
+							</div><!-- !/.menu-item -->
+						</div>
+						
+						<div class="row-fluid menu-extras">
+							<div class="col-fluid">
+								<h3 class="red">MAKE YOUR STEAK SURF&hellip;</h3>
+								<p class="lead">[top with grilled shrimp for 8.95]</p>
+							</div>
+							<div class="col-fluid">
+								<h3 class="brown">ADD ON THE FIXINS’&hellip;</h3>
+								<p class="lead">[with grilled peppers & onions or sautéed mushrooms for 2.50]</p>
+							</div>
+						</div>
+						
+						<div class="row-fluid menu-extras">
+							<div class="col-fluid">
+								<h4 class="green">ADD THE SALAD BAR for 3.95</h4>
+								<p class="lead">[or A La Carte for 7.95]</p>
+							</div>
+							<div class="col-fluid">
+								<h4 class="blue">ADD A 3 VEGETABLE PLATE for 8.95</h4>
+								<p class="lead">[make your own combo of any 3 side dishes]</p>
+							</div>
+						</div>
+						
+						<div class="sides hero-unit hero-umbrella">
+							<h5>Side Choices</h5>
+							<p class="lead">Baked Potato, House Cut Fries, Mashed Potatoes, Onion Rings, Hush Puppies, Vegetable of the Day, Chef's Choice Rice or Side Garden Salad.</p>
+						</div>
+					</div>
+				</div><!-- !/.menu-items -->
+			</div><!-- !/.menu -->
+		</div><!-- !/.accordion/#main-menu -->
+	</section>
 </div><!-- !/#content -->
 
 <div id="pushup">
@@ -66,7 +152,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 				
 				<div role="navigation" class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a class="clean" href="/specials" title="Best specials in Maggie Valley, NC">
+						<li><a class="clean" href="/specials" title="Best specials in Maggie Valley, NC" data-toggle="collapse" data-target="#specials">
 						Specials</a></li>
 						
 						<li><a class="clean" href="/prime-rib" title="Best prime rib in Maggie Valley, NC">
@@ -82,7 +168,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 						Local Favs</a></li>
 						
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Best Gourmet Pasta, #1 Burgers, Sandwiches and Appetizers in Maggie Valley, NC">
-						More Food <i class="ico-caret-down"></i></a>
+						More Food <span class="caret"></span></a>
 						
 							<ul class="dropdown-menu">
 								<li><a class="clean" href="/gourmet-pasta" title="Best Gourmet Pasta in Maggie Valley, NC">
@@ -105,7 +191,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 						</li>
 						
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Full bar in Maggie Valley, NC | Classic Cocktails, Rhum Bar, Martini Bar, Premium Win List">
-						Drinks <i class="ico-caret-down"></i></a>
+						Drinks <span class="caret"></span></a>
 						
 							<ul class="dropdown-menu">
 								<li><a class="clean" href="/classic-cocktails" title="Classic Cocktails from another time in Maggie Valley, NC">
@@ -308,6 +394,9 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 <span class="request_path" data-query="<?php print request_path(); ?>"></span>
 <script>
 	$(document).ready(function(){
+		$('.menu-item:nth-child(even)').addClass('even');
+		$('.menu-item:nth-child(odd)').addClass('odd');
+		
 		$('a.clean').live("click", function(e){
 			e.preventDefault();
 			
@@ -323,9 +412,18 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 				
 				try{
 					z = $(y).offset().top;
-				} catch(err) {z=0;}
+				}catch(err){z=0;}
 			}
+			
 			window.scrollTo(0, z);
 		});
+		
+		var path=location.pathname;
+		
+		$('a.clean').each(function(){
+			if($(this).attr('href')==path){
+				$(this).click();
+			}
+		});		
 	});
 </script></body></html>
