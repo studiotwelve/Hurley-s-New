@@ -383,9 +383,9 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 	</footer>
 </div><!-- !/#footer -->
 
-<script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="//code.jquery.com/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="/js/vendor/migrate.js"></script>
 <script src="/js/vendor/bootstrap.js"></script>
 <script src="/js/plugins.js"></script>
 <script src="/js/main.js"></script>
@@ -413,8 +413,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 				try{
 					z = $(y).offset().top;
 				}catch(err){z=0;}
-			}
-			
+			}			
 			window.scrollTo(0, z);
 		});
 		
