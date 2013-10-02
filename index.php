@@ -18,31 +18,22 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <head><meta charset="utf-8">
-
-<!-- !apple -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes" />
-
+<meta name="apple-mobile-web-app-capable" content="yes">
 <title>Maggie Valley, NC Steakhouse | Hurley's Creekside Dining & Rhum Bar</title>
 <meta name="description" content="A family restaurant with a full bar, TripAdvisor 2010 - <?php year(); ?> Certificate of Excellence Winner. USDA CHOICE Steaks and PRIME rib, Reservations Suggested +18289261566">
-
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/main.css" class="cssfx">
 <link rel="stylesheet" href="/css/custom.css" class="cssfx">
 <link rel="stylesheet" href="/css/respond.css">
-
 <script src="/js/vendor/cssfx.js"></script>
 <script src="/js/vendor/modernizr.js"></script>
 </head><body>
-
 <div id="content">
 	<section role="main" class="container-fluid">
 		<div class="accordion" id="main-menu">
 			<div class="accordion-group menu"><!-- !Specials -->
-				<h2 class="accordion-heading menu-title">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#specials" title="Best Specials in Maggie Valley, NC">Hurley Bird Specials <small class="menu-details"><strong>4pm to 6pm</strong> <em>Dine in only.</em></small></a>
-					
-				</h2>
+				<h2 class="accordion-heading menu-title"><a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#specials" title="Best Specials in Maggie Valley, NC">Hurley Bird Specials <small class="menu-details"><strong>4pm to 6pm</strong> <em>Dine in only.</em></small></a></h2>
 				<div id="specials" class="accordion-body collapse menu-items">
 					<div class="accordion-inner">
 						<div class="row-fluid">
@@ -102,7 +93,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 								<p class="lead">[top with grilled shrimp for 8.95]</p>
 							</div>
 							<div class="col-fluid">
-								<h3 class="brown">ADD ON THE FIXINS’&hellip;</h3>
+								<h3 class="brown">ADD ALL THE FIXINS’&hellip;</h3>
 								<p class="lead">[with grilled peppers & onions or sautéed mushrooms for 2.50]</p>
 							</div>
 						</div>
