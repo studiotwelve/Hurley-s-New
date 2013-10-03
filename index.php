@@ -16,82 +16,64 @@ function request_path(){
   else{$path = '';} $path = trim($path, '/'); return $path;}
 function q(){$_GET['q'] = request_path();} q(); ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-<head><meta charset="utf-8">
-
-<!-- !apple -->
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]--><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes" />
-
 <title>Maggie Valley, NC Steakhouse | Hurley's Creekside Dining & Rhum Bar</title>
 <meta name="description" content="A family restaurant with a full bar, TripAdvisor 2010 - <?php year(); ?> Certificate of Excellence Winner. USDA CHOICE Steaks and PRIME rib, Reservations Suggested +18289261566">
-
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/main.css" class="cssfx">
 <link rel="stylesheet" href="/css/custom.css" class="cssfx">
 <link rel="stylesheet" href="/css/respond.css">
-
 <script src="/js/vendor/cssfx.js"></script>
 <script src="/js/vendor/modernizr.js"></script>
 </head><body>
-
 <div id="content">
 	<section role="main" class="container-fluid">
 		<div class="accordion" id="main-menu">
 			<div class="accordion-group menu"> <!-- !Specials -->
 				<h2 class="accordion-heading menu-title">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#specials" title="Best Specials in Maggie Valley, NC">Hurley Bird Specials <small class="menu-details"><strong>4pm to 6pm</strong> <em>Dine in only.</em></small></a>
-				</h2>
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#specials" title="Best Specials in Maggie Valley, NC">Hurley Bird Specials <small class="menu-details"><strong>4pm to 6pm</strong> <em>Dine in only.</em></small></a></h2>
 				<div id="specials" class="accordion-body collapse menu-items">
 					<div class="accordion-inner">
 						<div class="row-fluid">
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Hurley’s Famous Prime Rib
-								</h3>
+								Hurley’s Famous Prime Rib</h3>
 								<p class="menu-item-desc lead">
-									A local favorite, our famous tender, juicy, seasoned & slow roasted prime rib prepared to your liking and served with our delicious au jus and creamy or raw horse raddish. <em>Served with salad and your choice of one side</em>.<span class="menu-item-price">13.95</span>
-								</p>
+								A local favorite, our famous tender, juicy, seasoned & slow roasted prime rib prepared to your liking and served with our delicious au jus and creamy or raw horse raddish. <em>Served with salad and your choice of one side</em>.<span class="menu-item-price">13.95</span></p>
 							</div><!-- !/.menu-item -->
 
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Tender Boneless Pork Chops
-								</h3>
+								Tender Boneless Pork Chops</h3>
 								<p class="menu-item-desc lead">
-									Unbelievably tender, moist, marinated boneless center cut pork tenderloin chops, char-grilled over an open flame lightly seasoned and very tasty. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
-								</p>
+								Unbelievably tender, moist, marinated boneless center cut pork tenderloin chops, char-grilled over an open flame lightly seasoned and very tasty. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span></p>
 							</div><!-- !/.menu-item -->
 						</div>
 
 						<div class="row-fluid">
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Hurley's Chicken
-								</h3>
+								Hurley's Chicken</h3>
 								<p class="menu-item-desc lead">
-									Our marinated chicken breast char-grilled & topped with mixed cheese, bacon, mushrooms & honey mustard. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
-								</p>
+								Our marinated chicken breast char-grilled & topped with mixed cheese, bacon, mushrooms & honey mustard. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span></p>
 							</div><!-- !/.menu-item -->
 
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Eggplant Parmesan
-								</h3>
+								Eggplant Parmesan</h3>
 								<p class="menu-item-desc lead">
-									Marinara with parmesan and mozzarella over golden fried eggplant and linguine.<span class="menu-item-price">13.95</span>
-								</p>
+								Marinara with parmesan and mozzarella over golden fried eggplant and linguine.<span class="menu-item-price">13.95</span></p>
 							</div><!-- !/.menu-item -->
 						</div>
 
 						<div class="row-fluid">
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Fish and Chips
-								</h3>
+								Fish and Chips</h3>
 								<p class="menu-item-desc lead">
-									Filet of catfish fried and served with fresh house cut french fries, great with salt and vinegar. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span>
-								</p>
+								Filet of catfish fried and served with fresh house cut french fries, great with salt and vinegar. Served with salad and your choice of one side.<span class="menu-item-price">13.95</span></p>
 							</div><!-- !/.menu-item -->
 						</div>
 
@@ -127,45 +109,37 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 
 			<div class="accordion-group menu">
 				<h2 class="accordion-heading menu-title">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#prime-rib" title="Best Prime Rib in Maggie Valley, NC">Hurley's Famous Prime Rib <small class="menu-details">Served with 2 sides.</small></a>
-				</h2>
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#prime-rib" title="Best Prime Rib in Maggie Valley, NC">
+					Hurley's Famous Prime Rib <small class="menu-details">Served with 2 sides.</small></a></h2>
 				<div id="prime-rib" class="accordion-body collapse menu-items">
 					<div class="accordion-inner">
 						<div class="row-fluid">
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									6oz Prime Rib
-								</h3>
+								6oz Prime Rib</h3>
 								<p class="menu-item-desc lead">
-									A local favorite, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">15.95</span>
-								</p>
+								A local favorite, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">15.95</span></p>
 							</div><!-- !/.menu-item -->
 							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									8oz Prime Rib
-								</h3>
+								8oz Prime Rib</h3>
 								<p class="menu-item-desc lead">
-									A local favorite, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">18.95</span>
-								</p>
+								A local favorite, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">18.95</span></p>
 							</div><!-- !/.menu-item -->
 							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									12oz Prime Rib
-								</h3>
+								12oz Prime Rib</h3>
 								<p class="menu-item-desc lead">
-									The Perfect size, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">23.95</span>
-								</p>
+								The Perfect size, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">23.95</span></p>
 							</div><!-- !/.menu-item -->
 							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									16oz Prime Rib
-								</h3>
+								16oz Prime Rib</h3>
 								<p class="menu-item-desc lead">
-									Bigger is better, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">31.95</span>
-								</p>
+								Bigger is better, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">31.95</span></p>
 							</div><!-- !/.menu-item -->
 						</div>
 
@@ -201,36 +175,29 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 
 			<div class="accordion-group menu">
 				<h2 class="accordion-heading menu-title">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#steakhouse" title="#1 Steakhouse in Maggie Valley, NC">USDA CHOICE STEAKS &#9733;&#9733;&#9733;&#9733;&#9733; <small class="menu-details">Served with 2 sides</small></a>					
-				</h2>
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#steakhouse" title="#1 Steakhouse in Maggie Valley, NC">USDA CHOICE STEAKS &#9733;&#9733;&#9733;&#9733;&#9733; <small class="menu-details">Served with 2 sides</small></a>					</h2>
 				<div id="steakhouse" class="accordion-body collapse menu-items">
 					<div class="accordion-inner">
 						<div class="row-fluid">
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									USDA Choice Rib Eye
-								</h3>
+								USDA Choice Rib Eye</h3>
 								<p class="menu-item-desc lead">
-									USDA choice rib eye, char-grilled over an open flame, this cut is sealed in it’s own juices with our house made rub with a touch of mesquite flavor. <span class="menu-item-price">10oz 19.95, 14oz 24.95</span>
-								</p>
+								USDA choice rib eye, char-grilled over an open flame, this cut is sealed in it’s own juices with our house made rub with a touch of mesquite flavor. <span class="menu-item-price">10oz 19.95, 14oz 24.95</span></p>
 							</div><!-- !/.menu-item -->
 							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Beautiful Top Sirloin
-								</h3>
+								Beautiful Top Sirloin</h3>
 								<p class="menu-item-desc">
-									A gorgeous slab of our USDA choice top sirloin seasoned with our house made rub, and char-grilled to perfection over an open flame. A fabulous entree. <span class="menu-item-price">8oz 15.95</span>
-								</p>
+								A gorgeous slab of our USDA choice top sirloin seasoned with our house made rub, and char-grilled to perfection over an open flame. A fabulous entree. <span class="menu-item-price">8oz 15.95</span></p>
 							</div><!-- !/.menu-item -->
 							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
-									Smothered Chopped Steak
-								</h3>
+								Smothered Chopped Steak</h3>
 								<p class="menu-item-desc">
-									Incredible fresh USDA choice ground steak seasoned & char-grilled to perfection over an open flame covered in sautéed peppers & onions or mushroom gravy. <span class="menu-item-price">10oz 11.95</span>
-								</p>
+								Incredible fresh USDA choice ground steak seasoned & char-grilled to perfection over an open flame covered in sautéed peppers & onions or mushroom gravy. <span class="menu-item-price">10oz 11.95</span></p>
 							</div><!-- !/.menu-item -->
 						</div>
 						
@@ -263,7 +230,6 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 					</div>
 				</div><!-- !/.menu-items -->
 			</div><!-- !/.menu -->
-
 		</div><!-- !/.accordion/#main-menu -->
 	</section>
 </div><!-- !/#content -->
@@ -276,8 +242,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 				<ul class="nav nav-pills pull-right clearfix">
 					<li><a href="//facebook.com/hurleys.maggie.valley"	title="Hurley's on facebook">	<i class="ico-facebook"></i></a></li>
 					<li><a href="//twitter.com/HurleysMV"				title="Hurley's on twitter">	<i class="ico-twitter"></i></a></li>
-				</ul>
-			</h1>
+				</ul></h1>
 			<h2>#1 Steakhouse in Maggie Valley, <abbr title="North Carolina">NC</abbr> <em>3 years running</em></h2>
 			<h3>A Family Restaurant with a full bar.</h3>
 		</hgroup>
@@ -293,22 +258,16 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 					<ul class="nav">
 						<li><a class="clean" href="/specials" title="Best specials in Maggie Valley, NC" data-toggle="collapse" data-target="#specials">
 						Specials</a></li>
-
 						<li><a class="clean" href="/prime-rib" title="Best prime rib in Maggie Valley, NC" data-toggle="collapse" data-target="#prime-rib">
 						Prime Rib</a></li>
-
 						<li><a class="clean" href="/steakhouse" title="#1 Steakhouse in Maggie Valley, NC" data-toggle="collapse" data-target="#steakhouse">
 						Steaks</a></li>
-
 						<li><a class="clean" href="/local-seafood" title="Fresh Local Seafood from Maggie Valley, NC" data-toggle="collapse" data-target="#local-seafood">
 						Seafood</a></li>
-
 						<li><a class="clean" href="/local-favorites" title="Maggie Valley, NC - Local Favorites/Local Fare" data-toggle="collapse" data-target="#local-favorites">
 						Local Favs</a></li>
-
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Best Gourmet Pasta, #1 Burgers, Sandwiches and Appetizers in Maggie Valley, NC">
 						More Food <span class="caret"></span></a>
-
 							<ul class="dropdown-menu">
 								<li><a class="clean" href="/gourmet-pasta" title="Best Gourmet Pasta in Maggie Valley, NC" data-toggle="collapse" data-target="#gourmet-pasta">
 								Gourmet Pasta</a></li>
@@ -328,10 +287,8 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 								Add ons</a></li>
 							</ul>
 						</li>
-
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Full bar in Maggie Valley, NC | Classic Cocktails, Rhum Bar, Martini Bar, Premium Win List">
 						Drinks <span class="caret"></span></a>
-
 							<ul class="dropdown-menu">
 								<li><a class="clean" href="/classic-cocktails" title="Classic Cocktails from another time in Maggie Valley, NC" data-toggle="collapse" data-target="#classic-cocktails">
 								Classic Cocktails</a></li>
@@ -355,10 +312,8 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 		</div>
 	</div>
 
-
 	<div id="top-info" class="container-fluid">
 		<div class="row-fluid">
-
 			<div class="col-fluid text-center trip">
 				<h3><a title="Hurley's Creekside, Maggie Valley - Restaurant Reviews - tripadvisor" href="http://l.s12.in/jq4BM" class="trip">tripadvisor</a></h3>
 				<h4><img src="/img/ta-ce-ribbon.png" alt="Certificate of excellence"></h4>
@@ -469,7 +424,6 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 			<ul class="clearfix"><li>Soups</li> <li>Salads</li> <li>Appetizers</li></ul>
 		</div>
 	</div>
-
 </div><!-- !/.pushup -->
 
 <div id="footer">
@@ -520,48 +474,10 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 			</div>
 		</div>
 	</footer>
-</div><!-- !/#footer -->
-
+</div>
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>
 <script src="/js/vendor/migrate.js"></script>
 <script src="/js/vendor/bootstrap.js"></script>
 <script src="/js/plugins.js"></script>
-<script src="/js/main.js"></script>
-
-<!-- !Move to main.js -->
-<span class="request_path" data-query="<?php print request_path(); ?>"></span>
-<script>
-	$(document).ready(function(){
-		$('.menu-item:nth-child(even)').addClass('even');
-		$('.menu-item:nth-child(odd)').addClass('odd');
-
-		$('a.clean').live("click", function(e){
-			e.preventDefault();
-
-			var x = $(this).attr('href'); var y; var z;
-			var r = /\/(.+)/g;
-			var m = r.exec(x);
-
-			document.title = $(this).attr("title")+" | "+document.title;
-			window.history.pushState("", document.title, x);
-
-			if(x=="/"){y=0;}else{
-				y = "#"+m[1];
-
-				try{
-					z = $(y).offset().top;
-				}catch(err){z=0;}
-			}
-			window.scrollTo(0, z);
-		});
-
-		var path=location.pathname;
-
-		$('a.clean').each(function(){
-			if($(this).attr('href')==path){
-				$(this).click();
-			}
-		});
-	});
-</script></body></html>
+<script src="/js/main.js"></script><span class="request_path" data-query="<?php print request_path(); ?>"></span></body></html>
