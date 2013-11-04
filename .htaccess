@@ -144,9 +144,9 @@ RewriteRule ^ index.php [L]
 
 Options -MultiViews
 
-ErrorDocument 500 /?e=500
-ErrorDocument 404 /?e=404
-ErrorDocument 403 /?e=403
+ErrorDocument 500 /?q=500
+ErrorDocument 404 /?q=404
+ErrorDocument 403 /?q=403
 
 AddDefaultCharset utf-8
 AddCharset utf-8 .atom .css .js .json .rss .vtt .xml

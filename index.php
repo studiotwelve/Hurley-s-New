@@ -16,15 +16,21 @@ function request_path(){
   else{$path = '';} $path = trim($path, '/'); return $path;}
 function q(){$_GET['q'] = request_path();} q(); ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]--><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="apple-mobile-web-app-capable" content="yes" />
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if lt IE 8]><html class="no-js lt-ie10 lt-ie9 lt-ie8"><![endif]--><!--[if lt IE 9]><html class="no-js lt-ie10 lt-ie9"><![endif]--><!--[if lt IE 10]><html class="no-js lt-ie10"><![endif]--><!--[if gte IE 10]><!--><html class="no-js"><!--<![endif]-->
+<head><meta charset="utf-8">
+<!-- !Mobilize -duh -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+<meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320">
+
 <title>Maggie Valley, NC Steakhouse | Hurley's Creekside Dining & Rhum Bar</title>
 <meta name="description" content="A family restaurant with a full bar, TripAdvisor 2010 - <?php year(); ?> Certificate of Excellence Winner. USDA CHOICE Steaks and PRIME rib, Reservations Suggested +18289261566">
+
 <link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/main.css" class="cssfx">
 <link rel="stylesheet" href="/css/custom.css" class="cssfx">
 <link rel="stylesheet" href="/css/respond.css">
+
 <script src="/js/vendor/cssfx.js"></script>
 <script src="/js/vendor/modernizr.js"></script>
 </head><body>
@@ -127,7 +133,9 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 								<p class="menu-item-desc lead">
 								A local favorite, our famous tender, juicy, seasoned, slow roasted prime rib prepared to your liking served with our own au jus. <span class="menu-item-price">18.95</span></p>
 							</div><!-- !/.menu-item -->
-							
+						</div>
+						
+						<div class="row-fluid">							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
 								12oz Prime Rib</h3>
@@ -175,7 +183,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 
 			<div class="accordion-group menu">
 				<h2 class="accordion-heading menu-title">
-					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#steakhouse" title="#1 Steakhouse in Maggie Valley, NC">USDA CHOICE STEAKS &#9733;&#9733;&#9733;&#9733;&#9733; <small class="menu-details">Served with 2 sides</small></a>					</h2>
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#main-menu" href="#steakhouse" title="#1 Steakhouse in Maggie Valley, NC">USDA CHOICE STEAKS &#9733;&#9733;&#9733;&#9733;&#9733; <small class="menu-details">Served with 2 sides</small></a></h2>
 				<div id="steakhouse" class="accordion-body collapse menu-items">
 					<div class="accordion-inner">
 						<div class="row-fluid">
@@ -192,7 +200,9 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 								<p class="menu-item-desc">
 								A gorgeous slab of our USDA choice top sirloin seasoned with our house made rub, and char-grilled to perfection over an open flame. A fabulous entree. <span class="menu-item-price">8oz 15.95</span></p>
 							</div><!-- !/.menu-item -->
-							
+						</div>
+						
+						<div class="row-fluid">							
 							<div class="col-fluid menu-item">
 								<h3 class="menu-item-title">
 								Smothered Chopped Steak</h3>
@@ -238,7 +248,7 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 	<header id="top-header" class="container-fluid">
 		<hgroup class="page-header">
 			<h1 class="clearfix">
-				<span class="pull-left text-center"><a rel="home" href="/" class="clean"><img src="/img/logo.png"></a> <small class="bot">Creekside Dining and Rhum Bar</small></span>
+				<span class="pull-left text-center"><a rel="home" href="/" class="clean" id="site-logo" title="Year Round Indoor and Outdoor Dining on the Creek, Fresh and Local Prime Rib, Steaks, Seafood, Pasta and more in Maggie Valley, NC"><img src="/img/logo.png"></a> <small class="bot">Creekside Dining and Rhum Bar</small></span>
 				<ul class="nav nav-pills pull-right clearfix">
 					<li><a href="//facebook.com/hurleys.maggie.valley"	title="Hurley's on facebook">	<i class="ico-facebook"></i></a></li>
 					<li><a href="//twitter.com/HurleysMV"				title="Hurley's on twitter">	<i class="ico-twitter"></i></a></li>
@@ -256,53 +266,53 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 
 				<div role="navigation" class="nav-collapse collapse">
 					<ul class="nav">
-						<li><a class="clean" href="/specials" title="Best specials in Maggie Valley, NC" data-toggle="collapse" data-target="#specials">
+						<li><a class="clean" href="/specials" title="Best dinner specials in Maggie Valley, NC">
 						Specials</a></li>
-						<li><a class="clean" href="/prime-rib" title="Best prime rib in Maggie Valley, NC" data-toggle="collapse" data-target="#prime-rib">
+						<li><a class="clean" href="/prime-rib" title="Best prime rib in Maggie Valley, NC">
 						Prime Rib</a></li>
-						<li><a class="clean" href="/steakhouse" title="#1 Steakhouse in Maggie Valley, NC" data-toggle="collapse" data-target="#steakhouse">
+						<li><a class="clean" href="/steakhouse" title="#1 Steakhouse in Maggie Valley, NC">
 						Steaks</a></li>
-						<li><a class="clean" href="/local-seafood" title="Fresh Local Seafood from Maggie Valley, NC" data-toggle="collapse" data-target="#local-seafood">
+						<li><a class="clean" href="/local-seafood" title="Fresh Local Seafood from Maggie Valley, NC">
 						Seafood</a></li>
-						<li><a class="clean" href="/local-favorites" title="Maggie Valley, NC - Local Favorites/Local Fare" data-toggle="collapse" data-target="#local-favorites">
+						<li><a class="clean" href="/local-favorites" title="Local Favorites/Local Fare">
 						Local Favs</a></li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Best Gourmet Pasta, #1 Burgers, Sandwiches and Appetizers in Maggie Valley, NC">
 						More Food <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a class="clean" href="/gourmet-pasta" title="Best Gourmet Pasta in Maggie Valley, NC" data-toggle="collapse" data-target="#gourmet-pasta">
+								<li><a class="clean" href="/gourmet-pasta" title="Best Gourmet Pasta in Maggie Valley, NC">
 								Gourmet Pasta</a></li>
-								<li><a class="clean" href="/burgers-sandwiches" title="#1 Burgers and Sandwiches in Maggie Valley, NC" data-toggle="collapse" data-target="#burgers-sandwiches">
+								<li><a class="clean" href="/burgers-sandwiches" title="#1 Burgers and Sandwiches in Maggie Valley, NC">
 								Burgers/Sandwiches</a></li>
 								<li class="divider"></li>
 								<li class="nav-header">Even more <i class="ico-caret-down"></i></li>
-								<li><a class="clean" href="/starters" title="Start the night off right with awesome Appetizers in Maggie Valley, NC" data-toggle="collapse" data-target="#starters">
+								<li><a class="clean" href="/starters" title="Start the night off right with awesome Appetizers in Maggie Valley, NC">
 								Starters</a></li>
-								<li><a class="clean" href="/soups" title="Soups dine-in or carry out in Maggie Valley, NC" data-toggle="collapse" data-target="#soups">
+								<li><a class="clean" href="/soups" title="Soups dine-in or carry out in Maggie Valley, NC">
 								Soups</a></li>
-								<li><a class="clean" href="/salads-salad-bar" title="Salads and Maggie Valley's only Salad Bar" data-toggle="collapse" data-target="#salads-salad-bar">
+								<li><a class="clean" href="/salads-salad-bar" title="Salads and Maggie Valley's only Salad Bar">
 								Salads and Salad bar</a></li>
-								<li><a class="clean" href="/sides" title="Simply the best side menu in Maggie Valley, NC" data-toggle="collapse" data-target="#sides">
+								<li><a class="clean" href="/sides" title="Simply the best side menu in Maggie Valley, NC">
 								Side menu</a></li>
-								<li><a class="clean" href="/add-ons" title="Make you dining experience perfect in Maggie Valley, NC" data-toggle="collapse" data-target="#add-ons">
+								<li><a class="clean" href="/add-ons" title="Make you dining experience perfect in Maggie Valley, NC">
 								Add ons</a></li>
 							</ul>
 						</li>
 						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" title="Full bar in Maggie Valley, NC | Classic Cocktails, Rhum Bar, Martini Bar, Premium Win List">
 						Drinks <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a class="clean" href="/classic-cocktails" title="Classic Cocktails from another time in Maggie Valley, NC" data-toggle="collapse" data-target="#classic-cocktails">
+								<li><a class="clean" href="/classic-cocktails" title="Classic Cocktails from another time in Maggie Valley, NC">
 								Classic Cocktails</a></li>
-								<li><a class="clean" href="/rhum-bar" title="The Rhum Bar in Maggie Valley, NC" data-toggle="collapse" data-target="#rhum-bar">
+								<li><a class="clean" href="/rhum-bar" title="The Rhum Bar in Maggie Valley, NC">
 								The Rhum Bar</a></li>
-								<li><a class="clean" href="/martini-bar" title="The Martini Bar in Maggie Valley, NC" data-toggle="collapse" data-target="#martini-bar">
+								<li><a class="clean" href="/martini-bar" title="The Martini Bar in Maggie Valley, NC">
 								The Martini Bar</a></li>
-								<li><a class="clean" href="/red-wine-list" title="Decadent Red Wines in Maggie Valley, NC" data-toggle="collapse" data-target="#red-wine-list">
+								<li><a class="clean" href="/red-wine-list" title="Decadent Red Wines in Maggie Valley, NC">
 								Decadent Reds</a></li>
-								<li><a class="clean" href="/white-wine-list" title="Refreshing White Wines in Maggie Valley, NC" data-toggle="collapse" data-target="#white-wine-list">
+								<li><a class="clean" href="/white-wine-list" title="Refreshing White Wines in Maggie Valley, NC">
 								Refreshing Whites</a></li>
-								<li><a class="clean" href="/drink-specials" title="Drink Specials in Maggie Valley, NC" data-toggle="collapse" data-target="#drink-specials">
+								<li><a class="clean" href="/drink-specials" title="Drink Specials in Maggie Valley, NC">
 								Drink Specials</a></li>
-								<li><a class="clean" href="/local-craft-draught-beer" title="Local Craft Draught Micro Brewery Beer in Maggie Valley, NC" data-toggle="collapse" data-target="#local-craft-draught-beer">
+								<li><a class="clean" href="/local-craft-draught-beer" title="Local Craft Draught Micro Brewery Beer in Maggie Valley, NC">
 								Local Craft Draughts</a></li>
 							</ul>
 						</li>
@@ -380,15 +390,15 @@ function q(){$_GET['q'] = request_path();} q(); ?>
 					<div class="carousel-caption">
 						<h2>Surreal Surroundings</h2>
 						<h3>In Beautiful Maggie Valley!</h3>
-						<p class="lead"><em>Nestled amongst the awesome great smokey mountains of North Carolina</em></p>
+						<p class="lead"><em>Nestled amongst the awesome great smokey mountains of North Carolina.</em></p>
 					</div>
 				</div>
 				<div class="item">
 					<a class="clean" href="/creekside-dining" title="Creekside&hellip; Perfect"><img src="/img/slide/05.png" alt="Relaxing & Beautiful, Naturally -Dine in our screened in patio or right outside by the creek"></a>
 					<div class="carousel-caption">
 						<h2>Creekside&hellip; Perfect</h2>
-						<h3>Relaxing & Beautiful,</h3>
-						<p class="lead">Naturally <em>&ndash;Dine in our screened in patio or right outside by the creek</em></p>
+						<h3>Relaxing & Beautiful, Naturally</h3>
+						<p class="lead"><em>&ndash;Dine on our heated patio or outside looking over Jonathan Creek.</em></p>
 					</div>
 				</div>
 			</div><!-- !/.carousel-inner -->
